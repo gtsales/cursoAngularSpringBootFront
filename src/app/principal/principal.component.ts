@@ -27,4 +27,11 @@ export class PrincipalComponent {
 
   }
 
+  //Método de inicialização
+  ngOnInit(){
+
+    this.selecionar();
+
+  }
+
 }

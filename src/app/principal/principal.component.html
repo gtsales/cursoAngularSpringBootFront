@@ -2,9 +2,11 @@
 
     <img src="assets/cliente.png">
     
-    <input type="text" placeholder="Nome" class="form-control">
-    <input type="number" placeholder="Idade" class="form-control">
-    <input type="text" placeholder="Cidade" class="form-control">
+    <!--ngModel vincula o formulário ao objeto, para isso funcionar os inputs precisam ter o atributo name definido corretamente-->
+
+    <input type="text" placeholder="Nome" class="form-control" name="nome" [(ngModel)]="cliente.nome">
+    <input type="number" placeholder="Idade" class="form-control" name="idade" [(ngModel)]="cliente.idade">
+    <input type="text" placeholder="Cidade" class="form-control" name="cidade" [(ngModel)]="cliente.cidade">
 
     <input type="button" value="Cadastrar" *ngIf="btnCadastro" class="btn btn-primary"><!--Define o botão como true, então ele fica visível-->
     <input type="button" value="Alterar" *ngIf="!btnCadastro" class="btn btn-warning"><!--Colocando a ! na frente diz que o valor é difrente de true e 

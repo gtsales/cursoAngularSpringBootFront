@@ -27,4 +27,11 @@ export class ClienteService {
 
   }
 
+   //Método para editar clientes
+   editar(obj:Cliente):Observable<Cliente>{
+
+    return this.http.put<Cliente>(this.url, obj);
+
+  }
+
 }

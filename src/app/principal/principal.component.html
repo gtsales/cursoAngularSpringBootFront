@@ -12,7 +12,7 @@
     <input type="button" value="Alterar" *ngIf="!btnCadastro" class="btn btn-warning" (click)="editar()"><!--Colocando a ! na frente diz que o valor é difrente de true e 
         define o botão como false, então ele fica invisível-->
     <input type="button" value="Remover" *ngIf="!btnCadastro" class="btn btn-danger" (click)="remover()">
-    <input type="button" value="Cancelar" *ngIf="!btnCadastro" class="btn btn-secondary">
+    <input type="button" value="Cancelar" *ngIf="!btnCadastro" class="btn btn-secondary" (click)="cancelar()">
 
 </form>
 
